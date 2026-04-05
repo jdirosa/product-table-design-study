@@ -1,0 +1,27 @@
+.selectable-table {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.selectable-table::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  border: 1px solid var(--color-border);
+  border-bottom: none;
+  border-radius: var(--radius-card) var(--radius-card) 0 0;
+  -webkit-mask: linear-gradient(to bottom, black 60px, transparent 100px);
+  mask: linear-gradient(to bottom, black 60px, transparent 100px);
+  pointer-events: none;
+}
+
+.selectable-table__search {
+  height: var(--search-height);
+  display: flex;
+  align-items: center;
+  padding: var(--cell-padding) var(--table-padding) var(--cell-padding) var(--space-1);
+}

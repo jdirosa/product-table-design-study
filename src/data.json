@@ -1,0 +1,136 @@
+[
+  {
+    "id": "1",
+    "name": "MVSE Custom Complete",
+    "status": "draft",
+    "inventory": "Bundle with 4 variants",
+    "category": "",
+    "channels": 0
+  },
+  {
+    "id": "2",
+    "name": "Hearthside Hoodie",
+    "image": "/images/product-02.png",
+    "status": "active",
+    "inventory": "Inventory not tracked",
+    "category": "Hoodies",
+    "channels": 4
+  },
+  {
+    "id": "3",
+    "name": "Flora Sneakers",
+    "image": "/images/product-03.png",
+    "status": "active",
+    "inventory": "Inventory not tracked",
+    "category": "Sneakers",
+    "channels": 4
+  },
+  {
+    "id": "4",
+    "name": "Fioranti Button Down",
+    "image": "/images/product-04.png",
+    "status": "active",
+    "inventory": "Inventory not tracked",
+    "category": "Shirts",
+    "channels": 4
+  },
+  {
+    "id": "5",
+    "name": "MVSE Vergier Beanie",
+    "image": "/images/product-05.png",
+    "status": "active",
+    "inventory": "Inventory not tracked",
+    "category": "Beanies",
+    "channels": 4
+  },
+  {
+    "id": "6",
+    "name": "MVSE Knit Beanie",
+    "image": "/images/product-06.png",
+    "status": "active",
+    "inventory": "Inventory not tracked",
+    "category": "Beanies",
+    "channels": 4
+  },
+  {
+    "id": "7",
+    "name": "Buonaglitci Skateboard Deck",
+    "image": "/images/product-07.png",
+    "status": "active",
+    "inventory": "Inventory not tracked",
+    "category": "Skateboard decks",
+    "channels": 4
+  },
+  {
+    "id": "8",
+    "name": "Bosquet Skateboard Deck",
+    "image": "/images/product-08.png",
+    "status": "active",
+    "inventory": "Inventory not tracked",
+    "category": "Skateboard decks",
+    "channels": 4
+  },
+  {
+    "id": "9",
+    "name": "Bosquet Inverse Skateboard Deck",
+    "image": "/images/product-09.png",
+    "status": "active",
+    "inventory": "Inventory not tracked",
+    "category": "Skateboard decks",
+    "channels": 4
+  },
+  {
+    "id": "10",
+    "name": "Marcella Skateboard Deck",
+    "image": "/images/product-10.png",
+    "status": "active",
+    "inventory": "Inventory not tracked",
+    "category": "Skateboard decks",
+    "channels": 4
+  },
+  {
+    "id": "11",
+    "name": "Riflessione Skateboard Deck",
+    "image": "/images/product-11.png",
+    "status": "active",
+    "inventory": "Inventory not tracked",
+    "category": "Skateboard decks",
+    "channels": 4
+  },
+  {
+    "id": "12",
+    "name": "Parterre Skateboard Deck",
+    "image": "/images/product-12.png",
+    "status": "active",
+    "inventory": "Inventory not tracked",
+    "category": "Skateboard decks",
+    "channels": 4
+  },
+  {
+    "id": "13",
+    "name": "Repose Skateboard Deck",
+    "image": "/images/product-13.png",
+    "status": "active",
+    "inventory": "Inventory not tracked",
+    "category": "Skateboard decks",
+    "channels": 4
+  },
+  {
+    "id": "14",
+    "name": "Piscine Skateboard Deck",
+    "image": "/images/product-14.png",
+    "status": "active",
+    "inventory": "Inventory not tracked",
+    "category": "Skateboard decks",
+    "channels": 4
+  },
+  {
+    "id": "15",
+    "name": "Clandestino Skateboard Deck",
+    "image": "/images/product-15.png",
+    "status": "active",
+    "inventory": "Inventory not tracked",
+    "category": "Skateboard decks",
+    "channels": 4
+  }
+]

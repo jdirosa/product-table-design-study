@@ -1,0 +1,132 @@
+.table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: var(--font-size-body);
+  letter-spacing: var(--letter-spacing-body);
+  color: var(--color-text);
+  padding: 0 var(--table-padding);
+}
+
+.table-wrapper {
+  position: relative;
+}
+
+.table-header {
+  position: relative;
+}
+
+.table-header th {
+  background: var(--color-bg-subdued);
+  height: var(--header-height);
+}
+
+.table-header th:first-child {
+  border-radius: var(--radius-2) 0 0 var(--radius-2);
+  padding-left: var(--row-padding);
+}
+
+.table-header th:last-child {
+  border-radius: 0 var(--radius-2) var(--radius-2) 0;
+  padding-right: var(--row-padding);
+}
+
+.table-header::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-2);
+  box-shadow:
+    0px 2px 2px -1px rgba(0, 0, 0, 0.05),
+    0px 1px 1px -0.5px rgba(0, 0, 0, 0.05),
+    0px 0px 0px 1px rgba(0, 0, 0, 0.08),
+    inset 0px 0px 0px 1px rgba(255, 255, 255, 0.25);
+  pointer-events: none;
+}
+
+.table-header__checkbox {
+  width: var(--col-checkbox);
+  padding-right: var(--cell-padding);
+  vertical-align: middle;
+}
+
+.table-header__cell {
+  width: var(--col-width);
+  padding: 0 var(--cell-padding);
+  text-align: left;
+  font-size: var(--font-size-label);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
+  letter-spacing: var(--letter-spacing-label);
+  line-height: var(--line-height-label);
+  white-space: nowrap;
+}
+
+.table-row {
+  position: relative;
+}
+
+.table-row td {
+  transition: background-color var(--duration-fast) ease;
+}
+
+.table-row::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: var(--row-padding);
+  right: var(--row-padding);
+  height: 1px;
+  background: var(--color-border);
+}
+
+.table-row:last-child::after {
+  display: none;
+}
+
+.table-row:hover td {
+  background: var(--color-bg-surface-hover);
+}
+
+.table-row--selected::after,
+.table-row:has(+ .table-row--selected)::after {
+  background: var(--color-border-selected);
+}
+
+.table-row--selected td {
+  background: var(--color-bg-surface-selected);
+}
+
+.table-row--selected td:first-child {
+  border-radius: var(--radius-2) 0 0 var(--radius-2);
+}
+
+.table-row--selected td:last-child {
+  border-radius: 0 var(--radius-2) var(--radius-2) 0;
+}
+
+.table-row--selected:hover td {
+  background: var(--color-bg-surface-selected);
+}
+
+.table-row__checkbox {
+  padding: 0 var(--cell-padding) 0 var(--row-padding);
+  vertical-align: middle;
+}
+
+.table-cell {
+  padding: 0 var(--cell-padding);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-cell);
+  vertical-align: middle;
+  max-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table-row td:last-child {
+  padding-left: var(--cell-padding);
+  padding-right: var(--row-padding);
+}

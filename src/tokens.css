@@ -1,0 +1,140 @@
+:root {
+  --color-text: #101010;
+  --color-text-secondary: #606060;
+  --color-text-on-primary: #ffffff;
+  --color-text-placeholder: #a0a0a0;
+  --color-bg: rgba(255, 255, 255, 1);
+  --color-bg-surface: #ffffff;
+  --color-bg-surface-hover: rgba(0, 0, 0, 0.01);
+  --color-bg-surface-selected: rgba(53, 115, 246, 0.02);
+  --color-bg-subdued: #f5f5f5;
+  --color-bg-input: #fcfcfc;
+
+  --color-border: #ebebeb;
+  --color-border-focus: #005bd3;
+  --color-border-selected: rgba(53, 115, 246, 0.18);
+  --color-border-divider: #d0d0d0;
+
+  --color-interactive: #3573f6;
+  --color-primary: #101010;
+
+  --color-badge-active-bg: #f9fef6;
+  --color-badge-active-text: #3bab00;
+  --color-badge-draft-bg: #fcfcfc;
+  --color-badge-draft-text: #707070;
+  --color-badge-draft-border: #ebebeb;
+
+  --font-family: 'Inter Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-size-heading: 17px;
+  --font-size-body: 13px;
+  --font-size-label: 12px;
+  --font-size-search: 14px;
+  --line-height-heading: 20px;
+  --line-height-cell: 20px;
+  --line-height-title: 21px;
+  --line-height-body: 18px;
+  --line-height-label: 17px;
+  --line-height-badge: 15px;
+  --letter-spacing-heading: -0.17px;
+  --letter-spacing-body: -0.13px;
+  --letter-spacing-label: -0.06px;
+  --letter-spacing-action: -0.12px;
+  --letter-spacing-search: -0.14px;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+  --space-1: 4px;
+  --space-2: 6px;
+  --space-3: 8px;
+  --space-4: 12px;
+  --space-5: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  --page-max-width: 1190px;
+
+  --table-padding: 8px;
+  --row-padding: 7px;
+  --cell-padding: 6px;
+  --header-height: 30px;
+  --search-height: 48px;
+  --search-inset: 11px;
+  --search-gap: 10px;
+  --thumbnail-padding-y: 10px;
+  --badge-padding-y: 3px;
+  --badge-padding-x: 8px;
+  --badge-height: 22px;
+
+  --col-checkbox: 29px;
+
+  --radius-checkbox: 4px;
+  --radius-checkbox-checked: 5px;
+  --radius-badge: 6px;
+  --radius-2: 8px;
+  --radius-3: 10px;
+  --radius-card: 16px;
+  --radius-full: 999px;
+
+  --checkbox-size: 16px;
+  --thumbnail-size: 36px;
+  --thumbnail-inner-size: 32px;
+  --thumbnail-inner-radius: 8px;
+  --thumbnail-inset: calc((var(--thumbnail-size) - var(--thumbnail-inner-size)) / 2);
+
+  --duration-fast: 100ms;
+  --duration-elevation: 120ms;
+  --ease-elevation: cubic-bezier(0.2, 0, 0, 1);
+
+  --shadow-card:
+    0px 2px 3px -1px rgba(0, 0, 0, 0.04),
+    0px 3px 4px -1.5px rgba(0, 0, 0, 0.04),
+    0px 4px 5px -2px rgba(0, 0, 0, 0.04),
+    0px 0px 0px 1px rgba(0, 0, 0, 0.08);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  font-feature-settings: inherit;
+  letter-spacing: inherit;
+}
+
+body {
+  font-family: var(--font-family);
+  font-feature-settings: 'ss01' 1, 'cv01' 1, 'cv09' 1, 'liga' 0, 'clig' 0;
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

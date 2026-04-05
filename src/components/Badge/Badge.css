@@ -1,0 +1,48 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: var(--badge-padding-y) var(--badge-padding-x);
+  border-radius: var(--radius-badge);
+  font-size: var(--font-size-label);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-badge);
+  white-space: nowrap;
+  overflow: clip;
+  height: var(--badge-height);
+}
+
+.badge--active {
+  background: var(--color-badge-active-bg);
+  color: var(--color-badge-active-text);
+  box-shadow:
+    0px 1px 0px 0px rgba(65, 180, 0, 0.1),
+    0px 0px 0px 1px rgba(87, 197, 24, 0.2);
+  text-shadow: 0px 1px 0px white;
+}
+
+.badge--active::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: inset 0px 1px 0px 0px white;
+  pointer-events: none;
+}
+
+.badge--draft {
+  background: var(--color-badge-draft-bg);
+  color: var(--color-badge-draft-text);
+  border: 1px dashed var(--color-badge-draft-border);
+  text-shadow: 0px 1px 0px white;
+}
+
+.badge--draft::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+}
